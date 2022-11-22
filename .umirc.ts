@@ -1,7 +1,7 @@
 export default {
   npmClient: 'pnpm',
   publicPath: '/ivelly/',
-  base: '/ivelly',
+  base: '/ivelly/',
   manifest: {
     basePath: '/ivelly'
   }
