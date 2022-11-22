@@ -1,4 +1,4 @@
 export default {
   npmClient: 'pnpm',
-  publicPath: '/ivelly'
+  publicPath: '/ivelly/'
 };
