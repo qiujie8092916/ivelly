@@ -1,0 +1,10 @@
+name: ivelly
+on:
+  push:
+    tags: /^v\d+\.\d+\.\d+$/
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run deploy
+        run: echo $GITHUB_REF_NAME
