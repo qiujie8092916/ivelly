@@ -16,7 +16,7 @@ RUN echo 'Asia/Shanghai' > /etc/timezone
 WORKDIR /usr/share/nginx/html
 
 # 复制 package.json
-COPY --from=Builder ./dist .
-COPY --from=Builder default.conf /etc/nginx/nginx.conf
+COPY --from=Builder /usr/src/app/dist .
+COPY --from=Builder /usr/src/app/default.conf /etc/nginx/nginx.conf
 
 EXPOSE 8080
