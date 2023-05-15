@@ -1,3 +1,7 @@
+FROM stefanwin/node-alpine-pnpm
+RUN pnpm install
+RUN pnpm build
+
 # 指定Node版本
 FROM nginx:1.21.6-alpine
 
