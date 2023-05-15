@@ -20,7 +20,7 @@ const HomePage: React.FC = () => {
         <a className={clsx(styles.mlr20, styles['no-decoration'])} href="/axure">
           Axure
         </a>
-        <a className={clsx(styles.mlr20, styles['no-decoration'])} href="//proxy.ivelly.com/ui">
+        <a className={clsx(styles.mlr20, styles['no-decoration'])} href="//proxy.ivelly.com">
           Proxy
         </a>
         <a
