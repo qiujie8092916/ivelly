@@ -1,4 +1,9 @@
 FROM stefanwin/node-alpine-pnpm
+
+WORKDIR /usr/src/app
+
+COPY . .
+
 RUN pnpm install
 RUN pnpm build
 
