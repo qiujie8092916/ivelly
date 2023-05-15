@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     env:
-      DOCKER_IMAGE_NAME: ivelly
+      DOCKER_IMAGE_NAME: ivelly-fe
       DOCKER_IMAGE_TAG: ${{ github.sha }}
     steps:
       - name: Checkout code
