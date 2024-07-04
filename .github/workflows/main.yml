@@ -28,7 +28,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_REPOSITORY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_TAG }}
+          tags: |
+            ${{ secrets.DOCKER_REPOSITORY }}/${{ env.DOCKER_IMAGE_NAME }}:${{ env.DOCKER_IMAGE_TAG }}
+            ${{ secrets.DOCKER_REPOSITORY }}/${{ env.DOCKER_IMAGE_NAME }}::latest
       - name: SSH Deploy
         uses: appleboy/ssh-action@master
         with:
