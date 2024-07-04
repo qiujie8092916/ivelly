@@ -17,14 +17,32 @@ const HomePage: React.FC = () => {
         <a className={clsx(styles.mlr20, styles['no-decoration'])} href="/resume">
           Resume（Invalid）
         </a>
-        <a className={clsx(styles.mlr20, styles['no-decoration'])} href="/axure">
+        {/* <a className={clsx(styles.mlr20, styles['no-decoration'])} href="/axure">
           Axure
+        </a> */}
+        <a
+          className={clsx(styles.mlr20, styles['no-decoration'])}
+          href="//frps.ivelly.com"
+        >
+          frps
         </a>
         <a
           className={clsx(styles.mlr20, styles['no-decoration'])}
-          href="//sentry.iskytrip.ivelly.com:8881"
+          href="//frpc.ivelly.com"
         >
-          Ngrok
+          frpc gateway
+        </a>
+        <a
+          className={clsx(styles.mlr20, styles['no-decoration'])}
+          href="//openwrt.ivelly.com"
+        >
+          openwrt gateway
+        </a>
+        <a
+          className={clsx(styles.mlr20, styles['no-decoration'])}
+          href="//clash.ivelly.com"
+        >
+          clash gateway
         </a>
       </div>
 
